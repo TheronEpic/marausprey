@@ -51,8 +51,7 @@ fleet "Marauder fleet VIII"
 		"Marausprey E (Missile)"
 	add variant 2
 		"Marauder Leviathan (Weapons)"
-		"Marauder Osprey" 1
-		"Marauder Osprey (Weapons)"
+		"Marauder Osprey" 2
 		"Marausprey W (Laser)"
 
 

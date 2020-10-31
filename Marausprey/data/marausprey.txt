@@ -1,5 +1,3 @@
-#I don't know copyright, just don't claim to have made this, the models, or the images used.
-
 ship "Marauder Osprey"
 	sprite "ship/marausprey_sprite"
 	thumbnail "thumbnail/marausprey_thumb"
@@ -15,7 +13,7 @@ ship "Marauder Osprey"
 		"heat dissipation" .7
 		"fuel capacity" 600
 		"cargo space" 40
-		"outfit space" 510
+		"outfit space" 512
 		"weapon capacity" 201
 		"engine capacity" 135
 		weapon
@@ -39,17 +37,45 @@ ship "Marauder Osprey"
 		"Tactical Scanner"
 		"S-970 Regenerator"
 
-	engine -17 103 1
-	engine -43 63 0.8
-	engine 17 103 1
-	engine 43 63 0.8
-	gun 0 -111.5 "Plasma Cannon"
-	gun -6.5 -97 "Plasma Cannon"
-	gun 6.5 -97 "Plasma Cannon"
-	gun -25.5 -63 "Plasma Cannon"
-	gun 25.5 -63 "Plasma Cannon"
-	turret -12.5 -9.5 "Heavy Anti-Missile Turret"
-	turret 12.5 -9.5 "Heavy Laser Turret"
+	engine -17 103
+		zoom 1
+		over
+		angle 5
+	engine 17 103
+		zoom 1
+		over
+		angle -5
+	engine -43 63
+		zoom 0.8
+		under
+		angle 10
+	engine 43 63
+		zoom 0.8
+		under
+		angle -10
+	"steering engine" -43 63
+		zoom 0.8
+		under
+		angle 10
+		right
+	"steering engine" 43 63
+		zoom 0.8
+		under
+		angle -10
+		left
+	"reverse engine" -36.5 16
+		angle 10
+		under
+	"reverse engine" 36.5 16
+		angle -10
+		under
+	gun 0 -115.5 "Plasma Cannon"
+	gun -7 -101 "Plasma Cannon"
+	gun 7 -101 "Plasma Cannon"
+	gun -26.5 -54.5 "Plasma Cannon"
+	gun 26.5 -54.5 "Plasma Cannon"
+	turret -14 -17 "Heavy Anti-Missile Turret"
+	turret 14 -17 "Heavy Laser Turret"
 	leak "leak" 40 50
 	leak "flame" 80 80
 	leak "big leak" 80 30
@@ -58,7 +84,7 @@ ship "Marauder Osprey"
 	explode "small explosion" 40
 	explode "tiny explosion" 28
 	"final explode" "final explosion medium"
-	description "Once a smooth and elegant ship, what appears to be an Osprey has been rearranged and reshaped to be even deadlier than before. Its plating has been thickened and lined with more shield emitters, its engine mounts expanded to accomodate more atomic engines, and a whole new gun port makes it close to being categorized as a Heavy Warship."
+	description "Once a smooth and elegant ship, what appears to be an Osprey has been rearranged and reshaped to be even deadlier than before. Its plating has been thickened and lined with more shield emitters, its engine mounts expanded to accomodate more atomic engines, and a whole new gun port makes it almost as powerful as a lower-class Heavy Warship."
 
 ship "Marauder Osprey (Weapons)"
 	name "Marauder Osprey"
@@ -99,19 +125,48 @@ ship "Marauder Osprey (Weapons)"
 		"Plasma Cannon" 6
 		"Tactical Scanner"
 		"S-970 Regenerator"
-	engine 17 102.5 1
-	engine 44 62 1
-	engine -17 102.5 1
-	engine -44 62 1
-	gun -6.5 -96 "Plasma Cannon"
-	gun 6.5 -96 "Plasma Cannon"
-	gun -13.5 -72.5 "Plasma Cannon"
-	gun 13.5 -72.5 "Plasma Cannon"
-	gun -26 -62.5 "Plasma Cannon"
-	gun 26 -62.5 "Plasma Cannon"
-	turret 0 24.5 "Heavy Anti-Missile Turret"
-	turret -13.5 -17.5 "Quad Blaster Turret"
-	turret 13.5 -17.5 "Quad Blaster Turret"
+
+	engine -17 103
+		zoom 1
+		over
+		angle 5
+	engine 17 103
+		zoom 1
+		over
+		angle -5
+	engine -43 63
+		zoom 0.8
+		under
+		angle 10
+	engine 43 63
+		zoom 0.8
+		under
+		angle -10
+	"steering engine" -43 63
+		zoom 0.8
+		under
+		angle 10
+		right
+	"steering engine" 43 63
+		zoom 0.8
+		under
+		angle -10
+		left
+	"reverse engine" -36.5 16
+		angle 10
+		under
+	"reverse engine" 36.5 16
+		angle -10
+		under
+	gun -7 -101 "Plasma Cannon"
+	gun 7 -101 "Plasma Cannon"
+	gun -17.5 -75.5
+	gun 17.5 -75.5
+	gun -26.5 -49.5
+	gun 26.5 -49.5
+	turret -18 -16 "Quad Blaster Turret"
+	turret 18 -16 "Quad Blaster Turret"
+	turret 0 14.5 "Heavy Anti-Missile Turret"
 	leak "leak" 40 50
 	leak "flame" 80 80
 	leak "big leak" 80 30
@@ -120,7 +175,7 @@ ship "Marauder Osprey (Weapons)"
 	explode "small explosion" 40
 	explode "tiny explosion" 28
 	"final explode" "final explosion medium"
-	description "Once a smooth and elegant ship, what appears to be an Osprey has been rearranged and reshaped to be even deadlier than before. Its plating has been thickened and lined with more shield emitters, its engine mounts expanded to accomodate strong atomic engines, and a whole new turret mount and pair of gun ports make it nearly as powerful as a small Heavy Warship."
+	description "Once a smooth and elegant ship, what appears to be an Osprey has been rearranged and reshaped to be even deadlier than before. Its plating has been thickened and lined with more shield emitters, its engine mounts expanded to accomodate strong atomic engines, and a whole new turret mount and pair of gun ports makes it close to being categorized as a Heavy Warship."
 
 ship "Marauder Osprey (Engines)"
 	name "Marauder Osprey"
@@ -163,18 +218,50 @@ ship "Marauder Osprey (Engines)"
 		"S-970 Regenerator"
 
 
-	gun 0 -113
-	gun -6.5 -104.5
-	gun 6.5 -104.5
-	gun -25.5 -64.5
-	gun 25.5 -64.5
-	turret -11.5 -8.5 "Heavy Anti-Missile Turret"
-	turret 11.5 -8.5 "Heavy Laser Turret"
-	engine 0 108
-	engine -17.5 97.5
-	engine 17.5 97.5
-	engine -43 59 0.8
-	engine 43 59 0.8
+	gun 0 -115.5
+	gun -26.5 -54.5
+	gun 26.5 -54.5
+	gun -7 -101
+	gun 7 -101
+	turret -14 -17 "Heavy Anti-Missile Turret"
+	turret 14 -17 "Heavy Laser Turret"
+	engine 0 116.5
+		zoom 0.9
+		over
+	engine -17 103
+		zoom 0.9
+		over
+		angle 5
+	engine 17 103
+		zoom 0.9
+		over
+		angle -5
+	engine -43 63
+		zoom 0.8
+		under
+		angle 10
+	engine 43 63
+		zoom 0.8
+		under
+		angle -10
+	"steering engine" -43 63
+		zoom 0.9
+		under
+		angle 10
+		right
+	"steering engine" 43 63
+		zoom 0.9
+		under
+		angle -10
+		left
+	"reverse engine" -36.5 16
+		zoom 1.1
+		angle 10
+		under
+	"reverse engine" 36.5 16
+		zoom 1.1
+		angle -10
+		under
 	leak "leak" 40 50
 	leak "flame" 80 80
 	leak "big leak" 80 30
@@ -245,8 +332,3 @@ ship "Marauder Osprey (Old)"
 	explode "tiny explosion" 28
 	"final explode" "final explosion medium"
 	description "Once a smooth and elegant ship, what appears to be an Osprey has been rearranged and reshaped to be even deadlier than before. Its plating has been thickened and lined with more shield emitters, its engine mounts expanded to accomodate strong atomic engines, and a whole new turret mount and pair of gun ports make it nearly as powerful as a small Heavy Warship."
-
-shipyard human
-	"Marauder Osprey"
-	"Marauder Osprey (Engines)"
-	"Marauder Osprey (Weapons)"
